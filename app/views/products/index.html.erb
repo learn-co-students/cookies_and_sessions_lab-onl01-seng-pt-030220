@@ -1,8 +1,10 @@
 <h1>The Products Index Page</h1>
 
 <%= form_tag(add_to_cart_products_path, method: :post) do %>
-  <%= text_field_tag 'item', nil, placeholder: "Add item to cart...", id: "product" %>
+  <%= text_field_tag 'product', nil, placeholder: "Add item to cart...", id: "product" %>
   <%= submit_tag 'Add to Cart', id: "add to cart" %>
+  <%#input name=product%>
+  <%#input type=submit value='add to cart'%> 
 <% end %>
 
 <ul>

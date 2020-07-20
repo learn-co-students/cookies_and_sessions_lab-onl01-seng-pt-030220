@@ -1,11 +1,10 @@
 class ProductsController < ApplicationController
 
   def index
-    
   end
 
   def add_to_cart
-    current_cart << params[:item] if not params[:item].nil?
+    cart << params[:product] if not params[:product].nil?
     redirect_to root_path
   end
 
