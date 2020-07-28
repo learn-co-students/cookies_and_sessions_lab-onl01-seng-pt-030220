@@ -1,0 +1,10 @@
+<%= form_tag add_product_path do %>
+
+    
+    <%= text_field_tag :'product', nil, placeholder: "Product Name" %>
+
+    <%= submit_tag 'add to cart' %>
+
+<% end %>
+
+<%= session[:cart].inspect %>
